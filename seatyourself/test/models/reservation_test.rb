@@ -3,5 +3,10 @@ require 'test_helper'
 class ReservationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
-  # end
-end
+  #   something
+  end
+
+# def test_the_truth
+# 	assert true
+# end
+
