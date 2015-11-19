@@ -51,9 +51,7 @@
 	  name: Faker::Company.name,
 	  address: "#{Faker::Address.street_address}, #{Faker::Address.street_suffix}, #{Faker::Address.city}",
 	  phone_number: Faker::PhoneNumber.phone_number,
-	  # type_of_cuisine = ['Chinese', 'Italian', 'American', 'Fine Dining', 'Fast Food', 'Sushi', 'Mexican']
-   #    type_of_cuisine[rand(type_of_cuisine.size)]
-   #  end
+	  type_of_cuisine: ['Chinese', 'Italian', 'American', 'Fine Dining', 'Fast Food', 'Sushi', 'Mexican'].sample
   )
 end
 
