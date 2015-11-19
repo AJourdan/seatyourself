@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+	skip_before_action :ensure_logged_in
+
+
 	def new
 		@user = User.new
 	end
@@ -6,10 +9,12 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
+			session[:user_id] = @user.id
 			redirect_to root_path, notice: "Welcome, please seat yourself!"
 		else
 			render new
 		end
+
 	end
 
 	private
