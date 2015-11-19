@@ -19,31 +19,7 @@
 #     t.datetime "updated_at",      null: false
 #   end
 
-	# categories = [
-	#   "Pub Food",
-	#   "Italian",
-	#   "Sushi",
-	#   "Fine Dining",
-	#   "Pizza",
-	#   "Chinese",
-	#   "Mexican"
-	# ]
-
-	# categories.each do |name|
-	#   Category.create(:name => name)
-	# end
-
 # BEGIN FAKER FOR RANDOM GENERATED RESTAURANTS
-
-	# restaurant = 100.times do |n|
-		
-	# 	    name = Faker::Company.name
-	# 	    address = {Faker::Address.street_address, Faker::Address.street_suffix, Faker::Address.city}
-	# 		phone_number = Faker::PhoneNumber.phone_number
-	# 	end
-	# 	}
-
-
 
 
 100.times do 
