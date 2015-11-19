@@ -19,31 +19,7 @@
 #     t.datetime "updated_at",      null: false
 #   end
 
-	# categories = [
-	#   "Pub Food",
-	#   "Italian",
-	#   "Sushi",
-	#   "Fine Dining",
-	#   "Pizza",
-	#   "Chinese",
-	#   "Mexican"
-	# ]
-
-	# categories.each do |name|
-	#   Category.create(:name => name)
-	# end
-
 # BEGIN FAKER FOR RANDOM GENERATED RESTAURANTS
-
-	# restaurant = 100.times do |n|
-		
-	# 	    name = Faker::Company.name
-	# 	    address = {Faker::Address.street_address, Faker::Address.street_suffix, Faker::Address.city}
-	# 		phone_number = Faker::PhoneNumber.phone_number
-	# 	end
-	# 	}
-
-
 
 
 100.times do 
@@ -71,4 +47,3 @@ end
 	#   {name: "Boralia", address: "59 Ossington Ave, Toronto, ON, Canada", phone: "647 351 5100", picture: nil, description: "Boralia celebrates the historic origins of Canadian cuisine. Our menu draws inspiration from traditional Aboriginal dishes, as well as the recipes of early settlers and immigrants of the 18th and 19th centuries.", category_id: nil, capacity: 100}, 
 	#   {name: "Burgers Priest", address: "463 Queen St W, Toronto ON", phone: "647 748 8108", picture: nil, description: "We are a classic American cheeseburger joint redeeming the burger one at a time. We grind a custom blend of premium beef multiple times daily on location.", category_id: nil, capacity: 40}
 	# ])
-
