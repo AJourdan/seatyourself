@@ -6,9 +6,10 @@
   <% @restaurants.each do |restaurant| %>
     <%= link_to restaurant_path(restaurant.id) do %>
       <h2>
-       <%= restaurant.phone_number %>
-        <%= restaurant.address %>
-        <%= restaurant.name %>
+       <%= restaurant.name %> <br/>
+       <%= restaurant.phone_number %> <br/>
+       <%= restaurant.address %> <br/>
+
       </h2>
     <% end %>
   <% end %>
