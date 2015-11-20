@@ -1,6 +1,12 @@
 <P>
-	<%= Restaurant.name %>
-	<%= Restaurant.street_address %>
-	<%= @restaurant.phone_number %>
+   <% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant_path(restaurant.id) do %>
+      <h2>
+       <%= restaurant.name %> <br/>
+       <%= restaurant.phone_number %> <br/>
+       <%= restaurant.address %> <br/>
 
+      </h2>
+    <% end %>
+<% end %>
 </P>	
