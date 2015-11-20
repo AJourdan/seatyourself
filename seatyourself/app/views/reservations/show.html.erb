@@ -1,0 +1,14 @@
+
+<div id="reservations">
+  <% @reservations.each do |rerservation| %>
+    <%= link_to restaurant_path(restaurant.id) do %>
+      <h2>
+       <%= reservation.name %> <br/>
+       <%= reservation.phone_number %> <br/>
+       <%= reservation.address %> <br/>
+       <%= reservation.date_time %> <br/>
+       <%= reservation.number_of_guests %> <br/>
+      </h2>
+    <% end %>
+  <% end %>
+</div>
