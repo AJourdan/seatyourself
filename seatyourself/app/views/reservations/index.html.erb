@@ -1,0 +1,46 @@
+<%= form_for @user do |f| %>
+
+	<div class="field">
+	 <%= f.label :first_name %></br>
+	 <%= f.text_field :first_name %>
+	</div>
+
+	<div class="field">
+	 <%= f.label :last_name %></br>
+	 <%= f.text_field :last_name %>
+	</div>
+
+	<div class="field">
+	<%= f.label :email %></br>
+	<%= f.text_field :email %>
+	</div>
+
+	<div class="field">
+	<%= f.label :number_of_guests %></br>
+	<%= f.text_field :number_of_guests %>
+	</div>
+
+	<div class="field">
+	<%= f.label :date_time %></br>
+	<%= f.text_field :date_time %>
+	</div>
+
+
+	<div class="actions"><%= f.submit %></div>
+
+
+
+
+
+
+
+
+
+<!--
+	reservations", force: :cascade do |t|
+    t.datetime "date_time"
+    t.integer  "number_of_guests"
+    t.integer  "user_id"
+    t.integer  "restaurant_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at", -->
